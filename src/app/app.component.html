@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row" style="margin-top: 50px;">
+    <div class="col-md-1 mb-3" *ngFor="let bulb of bulbs; let i = index">
+      <div class="numberCircle" [style.background]="bulb ? 'green' : 'gray'">{{i + 1}}</div>
+    </div>
+  </div>
+  <div class="d-grid gap-2 col-6 mx-auto mt-5">
+    <button type="button" class="btn btn-success" (click)="nextPhase()">Phase {{currentPhase}}</button>
+  </div>
+  <div class="row">
+    <div class="col-md-12 mt-5">
+      <h3>{{onBulbs.length}} bulbs are on: {{onBulbs.join(', ')}}</h3>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+ 
